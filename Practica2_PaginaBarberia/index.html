@@ -1,0 +1,95 @@
+<!--Se informa la versión de HTML a usar-->
+<!DOCTYPE html>
+<!-- Se denota el inicio del cuerpo del index HTML y el idioma -->
+<html lang="es">
+    <!-- HEAD: Se etiqueta la parte informativa del documento (Títulos, descripciones, scripts, etc) -->
+    <head>
+        <!-- Se declara el diccinario que se utilizará en el index -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <!--Se define el título de la página-->
+        <title>Barbería Alura</title>
+        <!-- Reseteamos los estilos por defecto que nos arroja Chrome -->
+        <link rel="stylesheet" href="reset.css">
+        <!-- Se referencia este index con los estilos del CSS seleccionado -->
+        <link rel="stylesheet" href="style.css">
+        <!-- Ahora importamos la fuente deseada desde google.fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+
+    </head>
+    <!-- BODY: Se etiqueta la sección que contiene el contenido del documento (imagenes, parrafos, links externos, etc.) -->
+    <body>
+        <!-- título principal de la página -->
+        <header>
+            <div class="caja">
+                <h1><img src="banner/logo.png" alt="logo Barbería Alura" ></h1>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">inicio</a></li>
+                        <li><a href="productos.html">productos</a></li>
+                        <li><a href="contacto.html">contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <!-- Se adjunta la imagen de fondo -->
+        <img class="banner" src="banner/banner.jpg">
+
+        <main>
+            <!-- Crear una división de contenido -->
+            <section class="principal">
+                <!-- Título 1 -->
+                <h2 class="titulo-principal">Sobre la Barbería Alura</h2>
+                
+                <img class="utensilios" src="banner/utensilios[1].jpg" alt="Utensilios de barbero">
+
+                <!-- Párrafo -->
+                <p>Ubicada en el corazón de la ciudad, la <strong>Barbería Alura</strong> trae para el mercado lo que hay de mejor para su cabello y barba. Fundada en 2020, la Barbería Alura ya es destaque en la ciudad y conquista nuevos clientes diariamente.</p>
+
+                <!-- Párrafo + negritas + itálikas (<p> + <strong> + <em>) -->
+                <!-- style="font-size:22px;": Se añade un tamaño de fuente -->
+                <p id="mision">Nuestra misión: <strong><em>Proporcionar autoestima y calidad de vida a nuestros clientes.</em></strong></p>
+
+                <p>Ofrecemos profesionales experimentados que están constantemente observando los cambios y movimiento en el mundo de la moda, para así ofrecer a nuestros clientes las últimas tendencias. El atendimiento posee un padrón de excelencia y agilidad, garantizando calidad y satisfacción de nuestros clientes.</p>
+            </section>
+
+            <section class="mapa">
+                <h3 class="titulo-principal">Nuestra Ubicación</h3>
+                <p>Nuestro establecimiento está ubicado en el corazón de la ciudad.</p>
+                <div class="mapa-contenido">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3732.7991991963404!2d-103.34820702543826!3d20.677746799743446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8428b1efe0932e59%3A0xa6fa03b36ff47ed7!2sCantina%20La%20Fuente!5e0!3m2!1ses-419!2smx!4v1709257412054!5m2!1ses-419!2smx" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </section>
+
+            <section class="diferenciales">
+                <!-- Título 2 -->
+                <h3 class="titulo-principal">Diferenciales</h3>
+                <div class="contenido-diferenciales">
+                    <!-- Crear lista: Unordended List (<UL> contenido de lista </UL>) -->
+                    <ul class="lista-diferenciales">
+                        <!-- <li> contenido de la lista </li> -->
+                        <li class="items">Atención personalizada a nuestros clientes</li>
+                        <li class="items">Espacio diferenciado</li>
+                        <li class="items">Localización</li>
+                        <li class="items">Profesinales calificados</li>
+                        <li class="items">Puntualidad</li>
+                        <li class="items">Limpieza</li>
+                    </ul><img src="banner/diferenciales.jpg" class="imagen-diferenciales">
+                </div>
+
+                <!-- iframe es usado para añadir un recuadro para contenido multimedia -->
+                <div class="video">
+                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/wcVVXUV0YUY?si=BKG-NmorsS7xH1Sp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>        
+            </section>
+        </main>
+                    
+        <footer>
+            <img src="banner/logo-blanco.png" alt="Logo Barbería Alura">
+            <p class="copyright">&copy Copyright Barbería Alura - 2024</p>
+        </footer>            
+    </body>
+<!-- Fin del documento HTML -->
+</html>
